@@ -14,11 +14,11 @@ const UserList = () => {
       });
   }, []);
 
-  if (loading) return <p>Loading users...</p>;
+  if (loading) return <div>Loading...</div>;
 
   return (
     <div>
-      <h2>User List</h2>
+      <h1>User List</h1>
       <ul>
         {users.map(user => (
           <li key={user.id}>

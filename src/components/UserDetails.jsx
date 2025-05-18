@@ -16,7 +16,7 @@ const UserDetails = () => {
       });
   }, [id]);
 
-  if (loading) return <p>Loading user details...</p>;
+  if (loading) return <div>Loading...</div>;
 
   return (
     <div>
