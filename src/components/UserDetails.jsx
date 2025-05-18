@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 
 const UserDetails = () => {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const id = window.location.pathname.split("/").reverse()[0];
 
   console.log("id", id);
 
   useEffect(() => {
+    setLoading(true);
     fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
       .then((res) => res.json())
       .then((data) => {
