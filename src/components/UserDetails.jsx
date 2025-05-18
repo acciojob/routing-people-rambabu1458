@@ -20,7 +20,7 @@ const UserDetails = () => {
 
   return (
     <div>
-      <h2>User Details</h2>
+      <h1>User Details</h1>
       <p>
         <strong>Name:</strong> {user.name}
       </p>
